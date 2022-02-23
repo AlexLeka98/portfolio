@@ -1,0 +1,68 @@
+@import './resets';
+@import './variables';
+
+//functions should return values
+@function weight($weight-name) {
+    @return map-get($font-weights, $weight-name );
+};
+
+// Mixins should define styles
+@mixin flexEvenly($direction) {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin theme($light-theme:true){
+    @if $light-theme{
+        background-color: lighten($dark, 40%);
+        color: darken($lightblue, 100%)
+    }
+}
+
+@mixin mobile {
+    @media (max-width: $mobile) {
+        @content;
+    }
+}
+
+
+
+.page__container{
+
+    height:200px;
+    @include flexEvenly(row);
+
+    background-color: $dark;
+    #{&}__paragraph{
+        font-weight: weight(bold);
+        color:$lightblue;
+
+        &:hover{
+            color:$hardblue;
+        }
+    }
+    #{&}__paragraph2{
+        @extend .page__container__paragraph;
+        &:hover{
+            color:$blue;
+        }
+    }
+    p{
+        color:$blue;
+    }
+    //below 800px changs to column.
+    @include mobile{
+        flex-direction: column;
+    }
+}
+
+.page__footer {
+    @include flexEvenly(row);
+}
+
+
+.light{
+    @include theme($light-theme: true);
+}

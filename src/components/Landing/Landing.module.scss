@@ -1,0 +1,47 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.landing_container{
+    height:calc(100vh - $nav-height);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+
+    .hero_body{
+        flex:5;
+        width:100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color:$secondary;
+        
+        h1{
+            font-size: 60px;
+            margin-bottom: 24px;
+        }
+        h2{
+            font-size:24px;
+            font-weight: weight(regular);
+        }
+    }
+
+    .hero_footer{
+        flex:3;
+        display: flex;
+        justify-content: flex-end;
+
+        // background-color: darken($color: $secondary, $amount: 40%);
+        align-items: flex-end;
+        .footerImg{
+            background-image: url('./hacker.png');
+            background-size: cover;
+            height:300px;
+            width:400px;
+            
+        }
+    }
+
+
+}

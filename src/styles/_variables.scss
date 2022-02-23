@@ -1,0 +1,28 @@
+
+// play mostly with green and red shades
+$primary: #001d22;
+$secondary: #00ffcc;
+$red: #a21e0f;
+$orange:#cd8600;
+$white:#ffffff;
+$black:#000000;
+$nav-height:120px;
+
+
+
+$font-weights: (
+    "thin":100,
+    "light":300,
+    "regular":400,
+    "medium":500,
+    "bold":700,
+    "extra-bold":800,
+    "black":900,
+);
+
+@function weight($weight-name) {
+    @return map-get($font-weights, $weight-name );
+};
+
+$tablet: 1080px;
+$mobile: 640px;
