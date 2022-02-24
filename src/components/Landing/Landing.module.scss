@@ -1,16 +1,21 @@
 @import "../../styles/mixins";
 @import "../../styles/variables";
 
+
 .landing_container{
     height:calc(100vh - $nav-height);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
+    width:100%;
+    
+    
 
     .hero_body{
         flex:5;
-        width:100%;
+        width:80%;
+        align-self: center;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -20,10 +25,22 @@
         h1{
             font-size: 60px;
             margin-bottom: 24px;
+            transition: all 200ms ease;
+
         }
         h2{
             font-size:24px;
             font-weight: weight(regular);
+        }
+
+        @include mobile{
+            h1{
+                font-size: 36px;
+                margin-bottom: 36px;
+            }
+            h2{
+                font-size:18px;
+            }
         }
     }
 
@@ -42,6 +59,50 @@
             
         }
     }
+
+
+
+    
+        
+
+
+    // svg path:nth-child(2){
+    //     stroke-dasharray: 50px;
+    //     stroke-dashoffset: 50px;
+    // }
+    // svg path:nth-child(3){
+    // }
+    // svg path:nth-child(4){
+    // }
+    // svg path:nth-child(5){
+
+    // }
+    // svg path:nth-child(6){
+
+    // }
+    // svg path:nth-child(7){
+
+    // }
+    // svg path:nth-child(8){
+
+    // }
+    // svg path:nth-child(9){
+
+    // }
+    // svg path:nth-child(10){
+
+    // }
+
+
+
+
+
+
+
+
+
+
+
 
 
 }
