@@ -13,7 +13,7 @@
     
 
     .hero_body{
-        flex:5;
+        flex:6;
         width:80%;
         align-self: center;
         display: flex;
@@ -32,6 +32,18 @@
             font-size:24px;
             font-weight: weight(regular);
         }
+
+        .profileImg{
+            background-image: url('../../assets/prifile.jpeg');
+            background-size: contain;
+            border-radius: 50%;
+            border:2px solid $secondary;
+            // background-color: red;
+            height:160px;
+            width:160px;
+            margin-top:20px;
+        }
+
 
         @include mobile{
             h1{

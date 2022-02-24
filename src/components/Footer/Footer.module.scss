@@ -1,0 +1,78 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.footerContainer{
+    width:100%;
+    margin-top:100px;
+    background-color: $secondary;
+    display: flex;
+    flex-direction: column;
+    padding:50px 0;
+
+    .logo{
+        background-image:url('../../assets/webdev_black.png');
+        background-size: contain;
+        height: 120px;
+        width: 120px;
+        margin:0 auto 20px;
+    }
+
+    p{
+        color:#858282;
+        font-weight: weight(medium);
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    & p:last-child{
+        font-size: 12px;
+    }
+
+    .socialIcons{
+        height:80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        div{
+            transition:all 300ms ease-in-out;
+            margin:0 15px;
+        }
+        div:nth-child(1){
+            width:40px;
+            height:40px;
+            background-image: url('../../assets/linkedIn.png');
+            background-size: contain;
+
+            &:hover{
+                cursor: pointer;
+                background-image: url('../../assets/linkedInHover.png');
+                transform: scale(1.5);
+            }
+        }
+        div:nth-child(2){
+            width:40px;
+            height:40px;
+            background-image: url('../../assets/github.png');
+            background-size: contain;
+
+            &:hover{
+                cursor: pointer;
+                background-image: url('../../assets/githubHover.png');
+                transform: scale(1.5);
+            }
+        }
+        div:nth-child(3){
+            width:40px;
+            height:40px;
+            background-image: url('../../assets/email.png');
+            background-size: contain;
+
+            &:hover{
+                cursor: pointer;
+                background-image: url('../../assets/emailHover.png');
+                transform: scale(1.5);
+            }
+        }
+    }
+
+}

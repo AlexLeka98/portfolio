@@ -10,27 +10,6 @@
     width:80%;
     margin:0 auto;
 
-    a{
-        margin-right:10px;
-        color: $secondary;
-        text-decoration: none;
-        font-size: 24px;
-        font-weight: weight(medium);
-        border: 2px solid $secondary;
-        padding:10px 20px;
-        border-radius: 50px;
-        transition: all 400ms ease;
-
-        @include mobile() {
-            font-size: 16px;
-        }
-    }
-    
-    a:hover{
-        color: lighten($secondary,40%);
-        border-color: lighten($secondary,40%);
-    }
-
     .logo{
         font-size: 48px;
         color:$secondary;

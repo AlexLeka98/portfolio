@@ -1,0 +1,63 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.devSkillsContainer{
+    width:40%;
+    margin: -180px auto;
+    background-color:$white;
+    border-radius: 16px;
+    display: flex;
+    // &div:first-child{
+    //     border-right: 1px solid $secondary;
+    // }
+ 
+
+    .columnStyle:first-child{
+        border-right: 2px solid $secondary;
+    }
+    .columnStyle{
+        padding:20px 40px;
+        width:50%;
+        // border-right: 1px solid $secondary;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+
+        p{
+            font-weight: weight(light);
+            line-height: 28px;
+        }
+
+        h4{
+            font-size:28px;
+            color:$secondary;
+            font-weight: weight(exbold);
+        }
+
+        h3{
+            font-weight: weight(exbold);
+            font-size:32px;
+            color:$secondary;
+        }
+
+        .designerLogo{
+            background-image:url('../../assets/webdev.png');
+            background-size: cover;
+            height:60px;
+            width:60px;
+            margin:30px auto 10px;
+        }
+        
+
+        .row3{
+            ul{
+                list-style-type: none;
+                padding: 0;
+            }
+            li{
+                padding-bottom:10px;
+            }
+        }
+        
+    }
+}
