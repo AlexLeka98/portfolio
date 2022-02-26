@@ -13,7 +13,7 @@
     
 
     .hero_body{
-        flex:6;
+        flex:3;
         width:80%;
         align-self: center;
         display: flex;
@@ -40,9 +40,9 @@
             border-radius: 50%;
             border:2px solid $secondary;
             // background-color: red;
-            height:160px;
-            width:160px;
-            margin-top:20px;
+            height:180px;
+            width:180px;
+            margin-top:50px;
         }
 
 
@@ -58,7 +58,7 @@
     }
 
     .hero_footer{
-        flex:3;
+        flex:1;
         display: flex;
         justify-content: flex-end;
 

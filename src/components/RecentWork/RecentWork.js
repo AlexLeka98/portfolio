@@ -10,14 +10,15 @@ const RecentWork = () => {
             <div className={styles.gridProjects}>
                 <div className={styles.row}>
                     <div>
-                        <img src='https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80' />
+                        {/* <img src='https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80' /> */}
+                        <img src='https://res.cloudinary.com/dyb9nhiqu/image/upload/v1645905370/Bug_Tracker_joetld.png' />
                         <div className={styles.projectInfo}>
                             <p>Blockchain pioneers bringing transparency, trust, and security to supply.</p>
                             <Button>Visit Website</Button>
                         </div>
                     </div>
                     <div>
-                        <img src='https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80' />
+                        <img src='https://res.cloudinary.com/dyb9nhiqu/image/upload/v1645905370/portfolio_frfg5m.png' />
                         <div className={styles.projectInfo}>
                             <p>Blockchain pioneers bringing transparency, trust, and security to supply.</p>
                             <Button>Visit Website</Button>
@@ -33,14 +34,14 @@ const RecentWork = () => {
                 </div>
                 <div className={styles.row}>
                 <div>
-                        <img src='https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80' />
+                        <img src='https://res.cloudinary.com/dyb9nhiqu/image/upload/v1645905371/red-rain_tvawov.png' />
                         <div className={styles.projectInfo}>
                             <p>Blockchain pioneers bringing transparency, trust, and security to supply.</p>
                             <Button>Visit Website</Button>
                         </div>
                     </div>
                     <div>
-                        <img src='https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80' />
+                        <img src='https://res.cloudinary.com/dyb9nhiqu/image/upload/v1645905371/phychology_pk0nqw.png' />
                         <div className={styles.projectInfo}>
                             <p>Blockchain pioneers bringing transparency, trust, and security to supply.</p>
                             <Button>Visit Website</Button>
