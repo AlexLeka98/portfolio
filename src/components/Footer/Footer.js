@@ -7,11 +7,11 @@ const Footer = () => {
             <div className={styles.logo}></div>
             <p>Living, learning, & leveling up <br/>one day at a time.</p>
             <div className={styles.socialIcons}>
-                <div></div>
-                <div></div>
-                <div></div>
+                <a href="https://www.linkedin.com/in/aleksander-leka-3919a51a1/"></a>
+                <a href="https://github.com/AlexLeka98"></a>
+                <a href = "mailto: alexleka98@outlook.com"></a>
             </div>
-            <p>Handcrafted by AlexLuwees</p>
+            <p>Handcrafted by &copy; AlexLuwees</p>
         </div>
     )
 }

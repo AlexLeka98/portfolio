@@ -7,13 +7,15 @@
     h2{
         color:$secondary;
         font-size:36px;
+        padding:0 10px;
     }
     p{
         color:$white;
+        padding:0 10px;
     }
 
     .gridProjects{
-        width:60%;
+        width:80%;
         margin:0 auto;
         display: flex;
         flex-direction: column;
@@ -22,10 +24,12 @@
 
         .row{
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
+            flex-direction: row;
             div{
+                max-width: 420px;
                 flex:1;
-                height:240px;
+                height:300px;
                 margin:10px;
                 box-sizing: border-box;
 
@@ -35,7 +39,7 @@
                 border-radius: 1rem;
                 overflow: hidden;
 
-                transition: all 200ms ease;
+                transition: all 500ms ease;
                 .projectInfo{
                     position:absolute;
                     height:100%;
@@ -56,12 +60,20 @@
                     button{
                         font-size:18px;
                     }
+                    @include mobile{
+                        p {
+                            font-size: 12px;
+                        }
+                        button{
+                            font-size:12px;
+                        }
+                    }
                 }
                 img{
                     width:100%;
                     height:100%;
                     border-radius: 1rem;
-                    transition: all 200ms ease;
+                    transition: all 500ms ease;
                 }
             }
             div:hover{
@@ -80,6 +92,20 @@
                 .projectInfo{
                     display: flex;
                 }
+            }
+            @include mobile{
+                & {
+                    flex-direction: column;
+                    // width:100%;
+                    align-items: center;
+                }
+            }
+        }
+        @include tablet{
+            & {
+                // flex-direction: column;
+                width:90%;
+                // align-items: center;s
             }
         }
     }
