@@ -6,7 +6,6 @@ function Navbar() {
   return (
     <div className={styles.navbar}>
         <div className={styles.logo}>Logo</div>
-        {/* <button href="/contact">Contact</button> */}
         <Button>Contact</Button>
     </div>
   )

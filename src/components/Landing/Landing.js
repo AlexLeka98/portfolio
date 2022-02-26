@@ -8,8 +8,8 @@ const Landing = () => {
     return (
         <section className={styles.landing_container}>
             <div className={styles.hero_body}>
-                <h1>Designer, Front-end Developer & Mentor</h1>
-                <h2>I design and code beautifully simple things, and I love what I do.</h2>
+                <h1>Front-end Developer & Designer</h1>
+                <h2>Designing and coding beautiful websites!</h2>
                 <div className={styles.profileImg}></div>
             </div>
             <div className={styles.hero_footer}>
