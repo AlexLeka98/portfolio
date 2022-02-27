@@ -28,12 +28,13 @@
     }
     button{
         color:$primary;
-        border-color:$primary;
+        border:2px solid $primary;
         width:150px;
         margin:20px auto 0;
         &:hover{
-            background-color:$primary;
-            color:$secondary;
+            background-color:$secondary;
+            color:$primary;
+            border-color: $secondary;
         }
         @include mobile{
             font-size:18px;
@@ -45,54 +46,3 @@
         width: 100%;
     }
 }
-// .contactContainer{
-//     box-sizing: border-box;
-//     width:100%;
-//     padding:40px;
-
-//     form{
-//         display: flex;
-//         margin:10px 0;
-//         flex-direction: column;
-//         padding:0;
-
-//         & div {
-//             display: flex;
-//             justify-content: space-around;
-            
-//             & div {
-//                 flex:1;
-//                 display: flex;
-//                 flex-direction: column;
-//                 margin:10px;
-//             }
-//             label{
-//                 font-size:18px;
-//                 margin-bottom: 10px;
-//             }
-//             input{
-//                 height: 36px;
-//                 outline: none;
-//                 font-size: 18px;
-//                 padding-left:10px;
-//                 background-color: $white;
-//                 border-radius: 8px;
-//                 transition: all 100ms ease;
-//                 &:focus{
-//                     border: 2px solid $secondary;
-//                 }
-//             }
-//         }
-//     }
-//     button{
-//         color:$primary;
-//         border-color:$primary;
-//         width:150px;
-//         margin:20px auto 0;
-
-//         &:hover{
-//             background-color:$primary;
-//             color:$secondary;
-//         }
-//     }
-// }
