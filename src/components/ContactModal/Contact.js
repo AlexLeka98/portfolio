@@ -24,7 +24,7 @@ const Contact = (props) => {
 
             <div className={styles.contactContainer}>
 
-                <h1>Contact</h1>
+                <h4>Contact</h4>
                 <form onSubmit={sendEmail}>
                     <div>
                         <Input type='text' name='Name' required />
@@ -32,7 +32,7 @@ const Contact = (props) => {
                     </div>
 
                     <div>
-                        <Input type='email' name='Email' required />
+                        <Input type='text' name='Email' required />
                     </div>
 
                     <div>
