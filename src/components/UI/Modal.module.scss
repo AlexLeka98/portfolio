@@ -1,0 +1,56 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 20;
+    background-color: rgba($primary, .8);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal {
+    width: 90%;
+    background-color: $white;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    z-index: 30;
+    animation: slide-down 300ms ease-out forwards;
+  }
+  
+  .closeModal {
+    border:none;
+    position:absolute;
+    height:30px;
+    width:30px;
+    background: url('../../assets/Close_square.png');
+    
+    background-repeat: no-repeat;
+    background-size: contain;
+    right:0;
+    margin:8px 8px 0 0;
+    transition: all 120ms ease-in;
+  }
+  .closeModal:hover{
+    cursor: pointer;
+    background: url('../../assets/Close_round_hover.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  
+  @keyframes slide-down {
+    from {
+      opacity: 0;
+      transform: translateY(-3rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

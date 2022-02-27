@@ -20,40 +20,38 @@ const DevSkills = () => {
                 <div className={styles.row3}>
                     <h4>Design Tools:</h4>
                     <ul>
-                        <li>Balsamiq Mockups</li>
                         <li>Figma</li>
-                        <li>Invision</li>
-                        <li>Marvel</li>
                         <li>Pen & Paper</li>
                         <li>Sketch</li>
                         <li>Webflow</li>
-                        <li>Zeplin</li>
                     </ul>
                 </div>
             </div>
             <div className={styles.columnStyle}>
                 <div className={styles.designerLogo}></div>
                 <div className={styles.row1}>
-                    <h3>Front-end Developer</h3>
+                    <h3>Web Developer</h3>
                     <p>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
                 </div>
 
                 <div className={styles.row2}>
-                    <h4>Languages I<br /> speak:</h4>
-                    <p>HTML, Pug, Slim, CSS, Sass, Less</p>
+                    <h4>Main technologies<br /> I use</h4>
+                    <p>React JS, HTML, CSS, Node JS, Sass</p>
                 </div>
 
                 <div className={styles.row3}>
-                    <h4>Dev Tools:</h4>
+                    <h4>Dev technologies:</h4>
                     <ul>
-                        <li>Atom</li>
-                        <li>Bitbucket</li>
+                        <li>React</li>
+                        <li>HTML/CSS/Javascript</li>
                         <li>Bootstrap</li>
-                        <li>Bulma</li>
-                        <li>Codekit</li>
+                        <li>Sass/Less</li>
+                        <li>Node JS</li>
+                        <li>Express</li>
+                        <li>MongoDB</li>
+                        <li>VS Code</li>
                         <li>Codepen</li>
                         <li>Github</li>
-                        <li>Gitlab</li>
                         <li>Terminal</li>
                     </ul>
                 </div>

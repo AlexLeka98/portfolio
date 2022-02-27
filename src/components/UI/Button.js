@@ -6,7 +6,7 @@ const Button = (props) => {
 
 
   return (
-    <button>
+    <button onClick={props.onClick ? props.onClick : null}>
         {props.children}
     </button>
   )

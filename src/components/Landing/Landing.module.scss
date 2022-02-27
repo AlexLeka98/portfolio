@@ -9,11 +9,12 @@
     justify-content: space-between;
     text-align: center;
     width:100%;
+    position:relative;
     
     
 
     .hero_body{
-        flex:3;
+        flex:5;
         width:80%;
         align-self: center;
         display: flex;
@@ -58,9 +59,12 @@
     }
 
     .hero_footer{
-        flex:1;
+        flex:2;
         display: flex;
         justify-content: flex-end;
+        position: absolute;
+        bottom:0;
+        right:0;
 
         // background-color: darken($color: $secondary, $amount: 40%);
         align-items: flex-end;

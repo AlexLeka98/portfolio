@@ -3,12 +3,67 @@
 
 .footerContainer{
     width:100%;
-    margin-top:100px;
     background-color: $secondary;
     display: flex;
     flex-direction: column;
     padding:50px 0;
 
+    .interestedStyle{
+        width:60%;
+        // height:180px;
+        background-color: $primary;
+        margin:-140px auto 50px;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding:40px 40px;
+
+        
+        & h4{
+            color: $white;
+            flex:1;
+            font-size:30px;
+            padding:20px 20px 20px 0;
+            margin:0;
+        }
+        & p{
+            color: $white;
+            flex:1;
+            font-size:16px;
+            // padding:0 10px;
+        }
+        & div{
+            flex:1;
+            & button {
+                color: $secondary;
+                border-color: $secondary;
+                width:200px;
+                padding-left:20px;
+                margin:20px 0;
+                @include mobile{
+                    width:150px;
+                }
+            }
+            & button:hover {
+                background-color: $secondary;
+                color:$primary;
+                border-color: $primary;
+            }
+        }
+        @include tablet{
+            flex-direction: column;
+            height:auto;
+
+        }
+        
+    }
+
+
+
+
+    // actual footer
     .logo{
         background-image:url('../../assets/webdev_black.png');
         background-size: contain;
@@ -26,7 +81,7 @@
     }
 
     & p:last-child{
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .socialIcons{
