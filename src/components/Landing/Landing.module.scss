@@ -46,6 +46,15 @@
             margin-top:50px;
         }
 
+        @include tablet{
+            h1{
+                font-size: 42px;
+                margin-bottom: 36px;
+            }
+            h2{
+                font-size:18px;
+            }
+        }
 
         @include mobile{
             h1{
@@ -62,17 +71,17 @@
         flex:2;
         display: flex;
         justify-content: flex-end;
-        position: absolute;
-        bottom:0;
-        right:0;
+        // position: absolute;
+        // bottom:0;
+        // right:0;
 
         // background-color: darken($color: $secondary, $amount: 40%);
         align-items: flex-end;
         .footerImg{
             background-image: url('./hacker.png');
             background-size: cover;
-            height:300px;
-            width:400px;
+            height:250px;
+            width:300px;
             
         }
     }
