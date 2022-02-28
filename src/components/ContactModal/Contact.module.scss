@@ -42,6 +42,16 @@
             width:120px;
         }
     }
+
+    .success{
+        text-align: center;
+        color:green;
+    }
+    .failure{
+        text-align: center;
+        color:red;
+    }
+
     @include mobile{
         padding:40px 20px;
         width: 100%;

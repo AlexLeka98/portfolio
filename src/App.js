@@ -7,6 +7,7 @@ import Landing from './components/Landing/Landing';
 import Navbar from './components/Navbar/Navbar';
 import RecentWork from './components/RecentWork/RecentWork';
 import ShortDescription from './components/ShortDiscription/ShortDescription';
+import Modal from './components/UI/Modal';
 
 
 function App() {
