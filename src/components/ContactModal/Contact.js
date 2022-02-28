@@ -68,7 +68,6 @@ const Contact = (props) => {
 
                     {!isLoading && emailSuccess.message === '' && <Button>Send</Button>}
                 </form>
-
                 {isLoading && <Loader />}
                 {emailSuccess.message !== '' && <p className={`${emailSuccess.status ? styles.success : styles.failure}`}>{emailSuccess.message}</p>}
             </div>
