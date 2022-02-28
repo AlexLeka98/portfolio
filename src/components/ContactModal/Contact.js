@@ -37,16 +37,18 @@ const Contact = (props) => {
                 setIsLoading(false);
                 console.log(result.text);
                 setEmailSuccess({ status: true, message: 'Send successfully!' });
+
+                nameRef.current.value = '';
+                surnameRef.current.value = '';
+                emailRef.current.value = '';
+                detailsRef.current.value = '';
             }, (error) => {
                 console.log(error.text);
                 setIsLoading(false);
                 setEmailSuccess({ status: false, message: 'There has been a problem, please try again' });
                 return;
             })
-        nameRef.current.value = '';
-        surnameRef.current.value = '';
-        emailRef.current.value = '';
-        detailsRef.current.value = '';
+
     };
     return (
         <Modal onModalHandler={props.toggleModal}>
