@@ -39,6 +39,7 @@
                 position: relative;
                 border-radius: 1rem;
                 overflow: hidden;
+                box-shadow: 0 0 20px 3px $black;
 
                 transition: all 500ms ease;
                 .projectInfo{
