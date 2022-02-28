@@ -2,8 +2,7 @@ import React, { Fragment } from 'react'
 import styles from './Input.module.scss';
 
 
-const Input = (props) => {
-    console.log(props);
+const Input = React.forwardRef((props,ref) => {
     return (
         <Fragment>
             <div className={styles.inputContainer}>
@@ -14,6 +13,7 @@ const Input = (props) => {
                             name={props.name}
                             rows={props.rows}
                             cols={props.cols}
+                            ref={ref}
                             required={props.required ? props.required : "false"}
                         />
                         <label htmlFor={props.name} className={styles.label_name}>
@@ -26,6 +26,7 @@ const Input = (props) => {
                             type={props.type}
                             name={props.name}
                             autoComplete='off'
+                            ref={ref}
                             required={props.required ? props.required : "false"}
                         />
                         <label htmlFor={props.name} className={styles.label_name}>
@@ -36,7 +37,7 @@ const Input = (props) => {
             </div>
         </Fragment>
     )
-}
+})
 
 export default Input
 

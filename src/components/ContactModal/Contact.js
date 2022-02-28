@@ -3,20 +3,32 @@ import styles from './Contact.module.scss'
 import Modal from '../UI/Modal'
 import Button from '../UI/Button'
 import Input from '../UI/Input'
-// import emailjs from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
+
 
 const Contact = (props) => {
-    const form = useRef();
-
-    const sendEmail = (e) => {
-        e.preventDefault();
-        console.log('Hey there!');
-        // emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_USER_ID')
-        //     .then((result) => {
-        //         console.log(result.text);
-        //     }, (error) => {
-        //         console.log(error.text);
-        //     });
+    
+    emailjs.init("bwjqZneQ23v-mbltB");
+    const nameRef = useRef();
+    const surnameRef = useRef();
+    const emailRef = useRef();
+    const detailsRef = useRef();
+    const formRef = useRef();
+    const sendEmail = (event) => {
+        event.preventDefault();
+        let info = {
+            name: nameRef.current.value,
+            surname: surnameRef.current.value,
+            email: emailRef.current.value,
+            details: detailsRef.current.value,
+        }
+        console.log(formRef.current);
+        emailjs.sendForm('service_sb5jngg', 'template_tfkjo7m', info)
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
     };
 
     return (
@@ -25,18 +37,18 @@ const Contact = (props) => {
             <div className={styles.contactContainer}>
 
                 <h4>Contact</h4>
-                <form onSubmit={sendEmail}>
+                <form ref={formRef} onSubmit={sendEmail}>
                     <div>
-                        <Input type='text' name='Name' required />
-                        <Input type='text' name='Surname' required />
+                        <Input type='text' name='Name' ref={nameRef} required />
+                        <Input type='text' name='Surname' ref={surnameRef} required />
                     </div>
 
                     <div>
-                        <Input type='text' name='Email' required />
+                        <Input type='text' name='Email' ref={emailRef} required />
                     </div>
 
                     <div>
-                        <Input type='textarea' name='Aditional details' required />
+                        <Input type='textarea' name='Aditional details' ref={detailsRef} required />
                     </div>
                     <Button>Send</Button>
                 </form>
