@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { Fragment, useState } from 'react';
 import './App.scss';
 import Contact from './components/ContactModal/Contact';
 import DevSkills from './components/DevSkills/DevSkills';
@@ -18,15 +18,22 @@ function App() {
     setShowModal(prevState => !prevState);
   }
   return (
-    <div className="App">
-      <Navbar toggleModal={toggleModal}/>
-      <Landing />
-      <ShortDescription />
-      <DevSkills />
-      <RecentWork />
-      <Footer  toggleModal={toggleModal}/>
-      {showModal && <Contact showModal={showModal} toggleModal={toggleModal} />}
-    </div>
+    <Fragment>
+
+      <div className="App">
+        <Navbar toggleModal={toggleModal} />
+        <Landing />
+        <ShortDescription />
+        <DevSkills />
+        <RecentWork />
+        <Footer toggleModal={toggleModal} />
+        {showModal && <Contact showModal={showModal} toggleModal={toggleModal} />}
+        <div>
+          <p>Hello</p>
+        </div>
+      </div>
+      <p>Red hello</p>
+    </Fragment>
   );
 }
 

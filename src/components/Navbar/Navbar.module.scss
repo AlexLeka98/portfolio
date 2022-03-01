@@ -9,13 +9,18 @@
     align-items: center;
     width:80%;
     margin:0 auto;
-
     .logo{
-        font-size: 48px;
-        color:$secondary;
-        font-weight: weight(extra-bold);
-        transition: all 400ms ease-in-out;
-
+        // font-size: 48px;
+        // color:$secondary;
+        // font-weight: weight(extra-bold);
+        // transition: all 400ms ease-in-out;
+        width:120px;
+        height:120px;
+        background-image: url('../../assets/greenLogo512.png');
+        background-size:contain;
+        padding:20px;
+        box-sizing: border-box;
+        // background-color: $secondary;
         @include mobile() {
             font-size: 42px;
         }

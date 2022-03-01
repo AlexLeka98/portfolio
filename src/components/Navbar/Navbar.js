@@ -6,7 +6,7 @@ function Navbar(props) {
   console.log(props);
   return (
     <div className={styles.navbar}>
-        <div className={styles.logo}>Logo</div>
+        <div className={styles.logo}></div>
         <Button onClick={props.toggleModal}>Contact</Button>
     </div>
   )
